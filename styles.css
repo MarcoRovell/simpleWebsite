@@ -1,4 +1,4 @@
-#page-title {
+    #page-title {
     text-align: center;
     color:rgb(194, 194, 194);
     font-family: 'Nanum Gothic', sans-serif;
@@ -31,7 +31,6 @@ h1 ~ h3 {
   
 h2 {
     text-align: center;
-    /* background-color: lightgray; */
     padding: 1%;
 }
 
@@ -51,17 +50,25 @@ h2 {
     background-color: rgb(73, 145, 171);
 }
 
-.table thead {
-    background-color: aquamarine;
+.table thead th {
+    border: 1px solid black;
+    background-color: #92000f;
+    color: white;
+    text-shadow: 1px 0 black, -1px 0 black,
+    0 1px black, 0 -1px black,
+    1px 1px black, -1px -1px black,
+    1px -1px black, -1px 1px black;
 }
 
 .table td {
-    border: 2px solid;
+    border: 2px solid black;
     text-align: center;
+    color: white;
 }
 
-.table tfoot {
+.table tfoot td {
     background-color: rgb(179, 189, 186);
+    color: black;
 
 }
 
@@ -83,4 +90,21 @@ tbody tr:nth-child(odd) td {
     width: 100%;
     background-color: darkgray;
     overflow:auto; 
+}
+
+ol li ul li {
+    list-style-type: lower-alpha;
+    padding: 5px;
+}
+
+ol {
+    font-size: large;
+    width: fit-content;
+    background-color: darkgray;
+    margin: auto;
+}
+
+#rest {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
